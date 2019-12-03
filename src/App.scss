@@ -1,0 +1,89 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.wrapper-picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  width: 500px;
+  height: 400px;
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  .active-color{
+    text-transform: uppercase;
+  }
+}
+
+.controls {
+  display: flex;
+}
+
+ .colored-square, .toggleButton{
+  height: 25px;
+  width: 25px;
+  border: 1px solid #ccc;
+}
+
+button.colored-square{
+  margin-right: 10px;
+}
+
+.menu{
+  transition: transform 0.3s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  background: #fff;
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    padding: 5px 10px;
+
+  }
+}
+
+.colors-menu {
+  .menu-item{
+    cursor: pointer;
+    &:hover{
+      background: #f1f1f1;
+    }
+    &.active{
+      background-color: #4454ff;
+      color: #fff;
+    }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+

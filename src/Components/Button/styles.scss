@@ -1,0 +1,45 @@
+button{
+  padding: 5px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+
+  .arrow {
+    border: solid #717171;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: 0.3s;
+    &.right {
+      transform: rotate(-45deg);
+      margin-right: 2px;
+    }
+    &.down {
+      transform: rotate(45deg);
+    }
+  }
+
+  &.toggleButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.button{
+    transition: 0.3s;
+  }
+
+  &.button-default {
+    background: #ccc;
+  }
+
+  &.button-green {
+    background: #4dac2e;
+    color: #fff;
+  }
+
+  &.button:hover {
+      filter: brightness(85%);
+  }
+}
+
